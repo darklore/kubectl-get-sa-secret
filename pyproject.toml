@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "kubectl-get-sa-secret"
+version = "0.1.0"
+description = ""
+authors = ["darklore <zodiac.brave.story@gmail.com>"]
+
+[tool.poetry.scripts]
+kubectl-get_sa_secret = "kubectl_get_sa_secret.main:main"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+click = "^8.0.1"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+pylint = "^2.11.1"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
