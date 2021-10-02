@@ -5,8 +5,7 @@
 
 ## Install
 ```
-$ git clone <this repo>
-$ pipx install kubectl-get-sa-secret
+$ pipx install git+https://github.com/darklore/kubectl-get-sa-secret
 ```
 
 ## Usage
