@@ -17,7 +17,7 @@ import click
     required=True,
     help="Service Account name of secret you want to get",
 )
-def main(namespace: str, service_account: str, index=0):
+def main(namespace: str, service_account: str, index: int = 0):
     cmd = f"kubectl get serviceaccount {service_account}"
     if namespace is not None and len(namespace) > 0:
         cmd += f' -n "{namespace}"'
